@@ -5,6 +5,10 @@ class Assets {
   static const String fontsNanumMyeongjoBold = 'assets/fonts/NanumMyeongjo-Bold.ttf';
   static const String fontsNanumMyeongjoExtraBold = 'assets/fonts/NanumMyeongjo-ExtraBold.ttf';
   static const String fontsNanumMyeongjoRegular = 'assets/fonts/NanumMyeongjo-Regular.ttf';
+  static const String iconsDeviconGoogle = 'assets/icons/devicon_google.svg';
+  static const String iconsLogosFacebook = 'assets/icons/logos_facebook.svg';
+  static const String iconsMdiLightEmail = 'assets/icons/mdi-light_email.svg';
   static const String imagesSplash = 'assets/images/splash.png';
+  static const String imagesStart = 'assets/images/start.png';
 
 }

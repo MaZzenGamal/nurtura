@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nurtura/core/theme/theme.dart';
+import 'package:nurtura/features/login/presentaion/views/login_screen.dart';
+import 'package:nurtura/features/register/presentation/view/register_screen.dart';
 import 'package:nurtura/features/splash%20&%20start/presentation/view/splash_screen.dart';
 
 void main() {

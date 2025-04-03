@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:nurtura/core/constants/widgets/custom_button.dart';
+import 'package:nurtura/core/constants/widgets/unified_button.dart';
 import 'package:nurtura/core/theme/colors.dart';
 import 'package:nurtura/core/theme/styles.dart';
+import 'package:nurtura/features/login/presentaion/views/login_screen.dart';
+import 'package:nurtura/generated/assets.dart';
 
 class StartScreenBody extends StatelessWidget {
   const StartScreenBody({super.key});
@@ -16,7 +18,7 @@ class StartScreenBody extends StatelessWidget {
             clipBehavior: Clip.none,
             children: [
               Image.asset(
-                'assets/images/start.png',
+                Assets.imagesStart,
                 fit: BoxFit.cover,
                 width: double.infinity,
               ),
@@ -57,7 +59,11 @@ class StartScreenBody extends StatelessWidget {
           ),
           Spacer(),
           UnifiedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushReplacement(context,  MaterialPageRoute(
+                builder: (context) => const LoginScreen(),
+              ));
+            },
             title: 'Get Started',
             isFullWidth: true,
             color: ColorsManager.mainColor,
