@@ -21,6 +21,12 @@ class TextStyles {
     fontFamily: AppTheme.fontFamily,
   );
 
+  static TextStyle get extraBold_16 => TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w800,
+    fontFamily: AppTheme.fontFamily,
+  );
+
   //******************  Size 20 ******************/
   static TextStyle get bold_20 => TextStyle(
     fontSize: 20,
