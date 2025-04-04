@@ -3,6 +3,7 @@ import 'package:nurtura/core/constants/widgets/unified_button.dart';
 import 'package:nurtura/core/constants/widgets/unified_form_field.dart';
 import 'package:nurtura/core/theme/colors.dart';
 import 'package:nurtura/core/theme/styles.dart';
+import 'package:nurtura/features/bot_nav_bar/presentation/views/bot_nav_bar.dart';
 import 'package:nurtura/features/login/presentaion/views/widgets/social_login.dart';
 import 'package:nurtura/features/register/presentation/view/register_screen.dart';
 
@@ -46,7 +47,17 @@ class LoginScreenBody extends StatelessWidget {
             height: 16,
           ),
           UnifiedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PopScope(
+                    canPop:  false,
+                    child: const BotNavBar(),
+                  ),
+                ),
+              );
+            },
             title: 'Sign In',
             isFullWidth: true,
             color: ColorsManager.mainColorLight,
@@ -89,10 +100,17 @@ class LoginScreenBody extends StatelessWidget {
                 'Continue as a guest?',
                 style: TextStyles.regular_16,
               ),
-              Text(
-                ' continue',
-                style: TextStyles.regular_16.copyWith(
-                  color: Colors.blue,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,  MaterialPageRoute(
+                    builder: (context) => const BotNavBar(),
+                  ));
+                },
+                child: Text(
+                  ' continue',
+                  style: TextStyles.regular_16.copyWith(
+                    color: Colors.blue,
+                  ),
                 ),
               ),
             ],

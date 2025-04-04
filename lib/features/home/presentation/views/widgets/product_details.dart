@@ -7,7 +7,7 @@ class ProductDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ProductDetailBody(),
+      body: SafeArea(child: ProductDetailBody()),
     );
   }
 }

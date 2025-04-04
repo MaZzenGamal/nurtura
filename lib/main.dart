@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nurtura/core/theme/theme.dart';
-import 'package:nurtura/features/bot_nav_bar/presentation/views/bot_nav_bar.dart';
 import 'package:nurtura/features/home/presentation/views/widgets/product_details.dart';
-import 'package:nurtura/features/login/presentaion/views/login_screen.dart';
-import 'package:nurtura/features/register/presentation/view/register_screen.dart';
 import 'package:nurtura/features/splash%20&%20start/presentation/view/splash_screen.dart';
 
 void main() {
@@ -18,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: AppTheme.theme,
       debugShowCheckedModeBanner: false,
-      home: ProductDetails(),
+      home: SplashScreen(),
     );
   }
 }
