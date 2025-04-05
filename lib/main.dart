@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nurtura/core/theme/theme.dart';
+import 'package:nurtura/features/camera/presentation/views/camera_screen.dart';
 import 'package:nurtura/features/home/presentation/views/widgets/product_details.dart';
 import 'package:nurtura/features/splash%20&%20start/presentation/view/splash_screen.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: AppTheme.theme,
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: CameraScreen(),
     );
   }
 }
